@@ -49,6 +49,7 @@ exports.up = function(knex) {
         .inTable('ingredients')
         .onUpdate('CASCADE')
         .onDelete('CASCADE');
+      tbl.unique(['recipe_id', 'ing_id']);
     });
 };
 
