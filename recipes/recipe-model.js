@@ -1,3 +1,7 @@
 const db = require('../data/dbConfig');
 
-module.exports = {};
+module.exports = {
+  getRecipes: function() {
+    return db('recipes');
+  },
+};
