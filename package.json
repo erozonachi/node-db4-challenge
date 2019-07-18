@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/erozonachi/node-db4-challenge/issues"
   },
-  "homepage": "https://github.com/erozonachi/node-db4-challenge#readme"
+  "homepage": "https://github.com/erozonachi/node-db4-challenge#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.19.0",
+    "sqlite3": "^4.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
 }
