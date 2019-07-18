@@ -11,4 +11,10 @@ module.exports = {
       .join('ingredients', 'ing_id', 'ingredients.id')
       .where({ recipe_id });
   },
+
+  getInstructions: function(recipe_id) {
+    return db('steps')
+      .where({ recipe_id })
+      .orderBy('step_number');
+  },
 };
